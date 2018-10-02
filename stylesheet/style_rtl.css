@@ -25,7 +25,7 @@ textarea.postText {
 .header-brand {
     float: right !important;
     margin-right: 0 !important;
-	margin-left: 55px;
+	margin-left: 30px;
 }
 .events-list-name {
     left:auto !important;
@@ -421,17 +421,6 @@ strong {
 	left: auto !important;
     right: 0px !important;
 }
-.text-sender-container {
-    box-shadow: inset -6px 0px 6px -3px rgba(0, 0, 0, 0.10) !important;
-}
-.message-option-btns {
-    right: auto !important;
-	left: 13px;
-}
-.text-sender-container .sendMessages .charsLeft-message {
-    right: auto !important;
-    left: 110px;
-}
 .movies-navbar-wrapper ul li a svg.pull-right {
     margin: 2px 0px 0px -9px !important;
     float: left !important;
@@ -546,9 +535,106 @@ strong {
 .wo_emoji_msg .emoboxtoppoint {
     margin-right: -95px;
 }
+.wo_market .market_widget .m_widget_head svg, .wo_market .market_search_header > span .btn svg, .wo_market .market_bottom .market_bottom_header h3 svg {
+    margin-right: 0 !important;
+	margin-left: 5px;
+}
+.wo_market .market_categories ul li a {
+	padding-left: 0 !important;padding-right: 25px;
+}
+.wo_market .market_categories ul li a:after, .wo_market .market_categories ul li a:before {
+	left: auto !important;right: 0;
+}
+.wo_market .market_search_header > form .form-group input {
+	padding-left: 12px !important;padding-right: 50px;
+}
+.wo_market .market_search_header > form .form-group svg {
+	left: auto !important;right: 15px;
+}
+.wo_market .market_search_header > span .btn {
+	margin-left: 0 !important;margin-right: 15px;
+}
+.inline_post_emoji {
+	margin-right: 0 !important;margin-left: 4px;
+}
+.inline_post_emoji .emoji {
+    right: auto !important;
+    left: 285%;
+}
+.reactions-box {
+    right: -10px;
+}
+.reaction {
+    float: right !important;
+}
+.emoji {
+    right: auto !important;
+	left: 76%;
+}
+.like-emo > .how_reacted {
+    margin: 0 -6px 0 0 !important;
+}
+.like-emo > .how_reacted:nth-child(1) {
+	margin-left:0 !important;
+    margin-right: -10px !important;
+}
+.inline_post_count_emoji .emoji {
+    right: auto !important;
+	left: 324%;
+}
+#comment_reacted {
+    float: right !important;
+}
+.search-container .inner-addon .glyphicon {
+    margin: 5px 5px 5px 0 !important;
+}
+#inline_emo_react .wo_who_react_this .inline_act_emoji {
+    margin: 0px !important;
+}
+#inline_emo_react .wo_who_react_this {
+    right: auto !important;
+    left: 10px;
+}
+#wo_comm_emojis {
+	left: 0;
+    right: auto;
+}
+.msg_mrk_rd {
+    margin-left: 0 !important;margin-right: 10px;
+}
+#wo_msg_right_prt .message-option-btns .btn.messages-rtime {
+    left: -7px !important;
+    right: auto !important;
+}
+#wo_msg_right_prt .msg_write_combo {
+    padding-right: 0 !important;padding-left: 5px;
+}
 
 
 
+
+@media (min-width: 992px){
+.col-md-3.sidebar {
+    padding-right: 0;
+	padding-left:15px;
+}
+#wo_nw_msg_page .mobilerightpane .inner-addon {
+    right: auto !important;left: 0;
+}
+#wo_msg_right_prt .wo_msg_user_dtl {
+    border-left: 0 !important;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+#wo_nw_msg_page .messages-users-list {
+    direction: ltr !important;
+}
+#wo_nw_msg_page .messages-users-list .tab-pane {
+    direction: rtl !important;
+}
+#wo_msg_right_prt .wo_msg_user_dtl .wo_msg_dtl_top .delete-icon {
+    margin: 0 auto 0 0 !important;
+}
+}
 
 @media (max-width: 1270px){
 .wo_imagecombo_lbox .story-img {
@@ -560,12 +646,7 @@ strong {
     margin-left: 320px;
 }
 }
-@media (min-width: 992px){
-.col-md-3.sidebar {
-    padding-right: 0;
-	padding-left:15px;
-}
-}
+
 @media (max-width: 767px) {
     .header-brand {
         right: 10px !important;
