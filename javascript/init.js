@@ -19,12 +19,10 @@ function Wo_progressIconLoader(container_elem) {
 }
 
 function Wo_StartBar() {
-    $('#bar_loading').show().animate({width:20 + 80 * Math.random() + "%"}, 500);
+    $('.loader').css('display', 'block');
 }
 function Wo_FinishBar() {
-    $('#bar_loading').animate({width:"100%"}, 500).delay(300).fadeOut(300, function() {
-       $(this).width("0");
-    });
+    $('.loader').css('display', 'none');
 }
 $(document).ready(function() {
   $('.nav-footer-toggle').on('click', function(e) {
