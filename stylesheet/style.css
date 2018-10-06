@@ -25,6 +25,9 @@ a,button{outline:0!important}
 .lightbox-post-footer .comments-list .reply .reply-heading .user,.post .post-footer .comments-list .reply .reply-heading .user{font-size:13px;font-weight:700;display:inline;margin-top:0}
 .lightbox-post-footer .comments-list .reply .reply-heading .time,.post .post-footer .comments-list .reply .reply-heading .time{font-size:10px;color:#aaa;margin-top:0;display:inline}
 .post-map img {padding:2px}
+video {
+	max-height: 500px !important;
+}
 iframe, .post-map img {border:1px solid #ededed;border-radius:3px;}
 .post-likes,.post-wonders, .post-reacted{display:none;overflow:auto;max-height:300px}
 .comment-text,.reply-text{font-size:13px;color:#777;overflow:hidden;width:85%;word-wrap:break-word}
@@ -134,7 +137,7 @@ body .mfp-wrap .mfp-progress-line span{width:0;height:4px;background:#ededed;mar
 a{word-wrap:break-word}
 a.white:focus{color:#fff!important;text-decoration:none}
 a.white:hover{color:#f3f3f3;text-decoration:none}
-.content-container {overflow-x:hidden;}
+/*.content-container {overflow-x:hidden;}*/
 .header-container{background:#fff;width:100%}
 .header-container .user-avatar img{margin-top:-4px;margin-right:3px;width:27px;height:27px;border-radius:50%;box-shadow:0 0 1px rgba(255,255,255,.8)}
 .message-user-image{margin-right:5px;border-radius:50%}
@@ -494,7 +497,7 @@ textarea.postText{border:none;padding-top:12px;padding-left:50px;height:45px;box
 .scroll-top-wrapper.show{visibility:visible;cursor:pointer;opacity:1}
 .scroll-top-wrapper i.fa{line-height:inherit}
 .btn-file{position:relative;overflow:hidden}
-.btn-file input[type=file]{position:absolute;top:0;right:0;min-width:100%;min-height:100%;font-size:100px;text-align:right;opacity:0;outline:0;background:#fff;cursor:inherit;display:block}
+.btn-file input[type=file]{position:absolute;top:0;right:0;min-width:100%;min-height:100%;text-align:right;opacity:0;outline:0;background:#fff;cursor:inherit;display:block}
 input[readonly]{background-color:#fff!important;cursor:text!important}
 .setting-update-alert{margin-bottom:20px}
 .available{color:green}
@@ -1257,6 +1260,12 @@ input.cusrange[type=range]::-ms-thumb{background-color:#2196F3;box-shadow:0 1px 
 .nearby-users-distance{background:#fff;padding:10px 15px;cursor:pointer;font-family:OpenSansBold,arial;color:#333}
 .sidebar-ad-wrapper{width:100%;overflow:hidden;border-top-left-radius:3px;border-top-right-radius:3px;background-color:#fff;color:#444;font-size:14px;margin-bottom:20px}
 .sidebar-ad-wrapper hr{padding:0;margin:0}
+div.mce-fullscreen {
+	z-index: 9999 !important;
+}
+.mce-menu {
+	z-index: 99999 !important;
+}
 .sidebar-ad-wrapper .sidebar-ad-header{width:100%;height:30px;overflow:hidden}
 .sidebar-ad-wrapper .sidebar-ad-header h4{width:100%;margin:0;display:inline;font-family:Arial,sans-serif;font-size:14px;font-weight:400;line-height:25px;height:30px}
 .sidebar-ad-wrapper .sidebar-ad-header h4 i{color:#ebba16}
@@ -1284,6 +1293,7 @@ input.cusrange[type=range]::-ms-thumb{background-color:#2196F3;box-shadow:0 1px 
 .page-rating>fieldset:not(:checked)>label{float:right;overflow:hidden;white-space:nowrap;cursor:pointer;color:#FF9800}
 .page-rating>fieldset:not(:checked)>label svg.feather{margin-top:-3px;width:18px;height:18px}
 .page-rating>fieldset:not(:checked)>label:hover svg.feather{fill:#FF9800}
+.page-rating>fieldset:not(:checked)>label svg.feather.active{fill:#FF9800}
 .page-rating>fieldset:not(:checked)>label:hover~label svg.feather{fill:#FF9800}
 .page-rating>fieldset>label:active{position:relative;top:2px}
 @media screen and (max-width:990px) {
@@ -3099,7 +3109,7 @@ to{opacity:1;margin-top:0}
 .earn_points .ep_illus {flex-direction: column;}
 }
 
-@media (max-width:420px) {
+@media (max-width:470px) {
 .owl-item .format-standard{height:320px}
 .wo_about_wrapper .wo_go_pro .main_head_pro{font-size:30px;line-height:42px}
 .wo_pro_features h2{margin-top:23px;margin-bottom:40px;font-size:27px}
@@ -3124,7 +3134,7 @@ to{opacity:1;margin-top:0}
 #head_menu_rght .sixteen-font-size {padding: 12px 7px;}
 }
 
-@media (max-width:400px) {
+@media (max-width:430px) {
 .nav.navbar-nav.navbar-right>li>a{padding:10px 5px}
 .wo_loading_post_child{transform:scale(.6);margin:-55px -100px}
 }
