@@ -25,8 +25,14 @@ a,button{outline:0!important}
 .lightbox-post-footer .comments-list .reply .reply-heading .user,.post .post-footer .comments-list .reply .reply-heading .user{font-size:13px;font-weight:700;display:inline;margin-top:0}
 .lightbox-post-footer .comments-list .reply .reply-heading .time,.post .post-footer .comments-list .reply .reply-heading .time{font-size:10px;color:#aaa;margin-top:0;display:inline}
 .post-map img {padding:2px}
-video {
-	max-height: 500px !important;
+.fluid_theatre_mode {
+	z-index: 99 !important;
+}
+.post-file video {
+	max-height: 600px;
+}
+.active-player {
+	max-height: 100% !important;
 }
 iframe, .post-map img {border:1px solid #ededed;border-radius:3px;}
 .post-likes,.post-wonders, .post-reacted{display:none;overflow:auto;max-height:300px}
@@ -88,7 +94,7 @@ iframe, .post-map img {border:1px solid #ededed;border-radius:3px;}
 .post .post-heading .meta .title a:hover{text-decoration:underline!important}
 .post .post-heading .meta .time{margin-top:8px;color:#999}
 .post .post-description{padding:15px 15px 8px}
-.post .post-description p{font-size:18px;color:#555;text-align:center;overflow:hidden;word-wrap:break-word}
+.post .post-description p{font-size:18px;color:#555; text-align:center; overflow:hidden;word-wrap:break-word}
 .post .post-description .stats .stat-item{display:inline-block;padding:3px 7px;font-size:12px;border:0;color:#555}
 .post .post-description .stats .stat-item .icon{margin-right:8px}
 .post .post-file{max-height:400px;background:#f9f9f9;width:100%}
@@ -1694,7 +1700,10 @@ to{top:0;opacity:1}
 .wo_user_side_info .menu_list{display:block;padding:7px 5px;transition:all .15s ease-in-out;text-transform:capitalize;text-decoration:none}
 .wo_user_side_info li .split-link{display:block}
 .wo_user_side_info li span b{margin:0}
-#fullsizeimg{max-height:550px;margin-left:-15px;width:calc(100% + 30px);overflow:hidden}
+#fullsizeimg{max-height:600px;margin-left:-15px;width:calc(100% + 30px);overflow:hidden}
+.fluid_video_wrapper {
+	max-height:600px;
+}
 #fullsizeimg img{max-height:none;border:0;padding:0;border-radius:0}
 .wo_adaptive_media .album-image:first-child .image-file,.wo_adaptive_media_4 .album-image:first-child .image-file{width:100%}
 .wo_adaptive_media{display:inline-block;overflow:hidden;position:relative;width:100%}
@@ -2540,6 +2549,10 @@ to{background-position:0 0,100% 0,120px 0,120px 40px,120px 60px,120px 80px}
 #inline_emo_react .wo_who_react_this {position: absolute;top: 0;right: 10px;background: #f9f9f9;border-radius: 50%;width: 23px;height: 23px;display: flex;align-items: center;justify-content: center;}
 #inline_emo_react .wo_who_react_this .inline_act_emoji {transform: scale(1);margin-bottom: 0px;}
 
+.post .post-footer .comments-list .comment .comment-body .like-btn {z-index: 9;}
+.post .post-footer .comments-list .comment .comment-body .reactions-box {z-index: 5;top: -55px;}
+.post .post-footer .comments-list .comment .comment-body .reactions-box li {animation: none;}
+
 /*Payment Box*/
 .payment_box .btn {width: 100%;background-color: white;color: #2c2c2c;text-align: inherit;display: flex;align-items: center;border-bottom: 1px solid rgba(0, 0, 0, 0.07);border-radius: 0;padding: 20px 25px;transition: all 0.15s;font-family: "Lato", sans-serif; font-weight: 600;box-shadow: none;}
 .payment_box .btn:hover {background-color: rgba(0, 0, 0, 0.04);}
@@ -2603,12 +2616,12 @@ to{background-position:0 0,100% 0,120px 0,120px 40px,120px 60px,120px 80px}
 .active_sessions {padding: 0 15px;margin-bottom: 10px;}
 .active_sessions .as_list {padding: 13px 10px;position: relative;border-bottom: 1px solid rgba(0, 0, 0, 0.07);}
 .active_sessions .as_list:last-child {border: 0;}
-.active_sessions .as_list .platform_icon {margin-right: 15px;float: left;width: 36px;height: 36px;display: flex;align-items: center;justify-content: center;}
+.active_sessions .as_list .platform_icon {margin-right: 15px;float: left;width: 36px;height: 36px;display: flex;align-items: center;justify-content: center; margin-bottom: 40px;}
 .active_sessions .as_list .platform_icon svg {width: 28px;height: 28px;}
 .active_sessions .as_list .log_out_session {float: right;width: 35px;height: 35px;display: flex;align-items: center;justify-content: center;padding: 0;border-radius: 50%;margin: 1px 0;}
 .active_sessions .as_list .session_info {display: block;margin-right: 50px;font-family: "Lato", sans-serif;}
 .active_sessions .as_list .session_info h4 {margin-top: 0;margin-bottom: 4px;font-weight: 600;}
-.active_sessions .as_list .session_info p {margin-bottom: 0;line-height: 1;}
+.active_sessions .as_list .session_info p {margin-bottom: 8px;line-height: 1;}
 
 .app_dv_head {margin-top: -25px;padding-top: 10px;background: #fff;}
 #filterby-post .filter_negative_clr, #filterby-post .filter_negative_clr svg {color: #333333;}
@@ -2751,7 +2764,7 @@ to{background-position:0 0,100% 0,120px 0,120px 40px,120px 60px,120px 80px}
 
 /*Image Crop*/
 .wo_crop_img_pic {display: flex;align-items: center;justify-content: space-around;}
-.wo_crop_img_pic img {max-height: 400px;}
+.wo_crop_img_pic img {max-height: 400px; max-width: 100%; text-align: center;}
 .wo_crop_img_pic .rcrop-preview-wrapper {border-radius: 50%;overflow: hidden;height: 130px;width: 130px;}
 
 
@@ -3107,6 +3120,9 @@ to{opacity:1;margin-top:0}
 .show_post_comm_mobi{display:block}
 .api_posts #wo_post_stat_button .stat-item {font-weight: 700;}
 .earn_points .ep_illus {flex-direction: column;}
+.post .post-footer .comments-list .comment .comment-body .reactions-box {left: -50px;}
+.post .post-footer .comments-list .reply .comment-body .reactions-box {	left: -100px;}
+.reaction {overflow: hidden;}
 }
 
 @media (max-width:470px) {
@@ -3145,6 +3161,9 @@ to{opacity:1;margin-top:0}
 .header-brand{display:none}
 #wo_nw_msg_page .messages-container .message-media img {max-height: 110px;}
 #head_menu_rght {float: none !important;justify-content: space-around;margin: 0 -18px;}
+.reactions-box {width: 148px;top: -100px;}
+.post .post-footer .comments-list .comment .comment-body .reactions-box {top: -100px;}
+.post .post-footer .comments-list .reply .comment-body .reactions-box {left: -30px;}
 }
 
 @media (max-width:320px) {
