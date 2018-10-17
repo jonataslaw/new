@@ -715,9 +715,8 @@ function Wo_FilterPostBy(filter_by) {
 	  $('html, body').animate({
 		scrollTop: $('#scroll_filter_click').offset().top - 100 //#DIV_ID is an example. Use the id of your destination on the page
 	  }, 500);
-    document.getElementById('posts').innerHTML = data;
-      //more_posts.html('<span class="btn btn-default">' + data.text + '<span>');
-      //Wo_progressIconLoader(filter_by_progress_icon);
+      $('#posts').html(data);
+      
     }
   });
 }
