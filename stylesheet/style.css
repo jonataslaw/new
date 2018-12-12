@@ -94,7 +94,7 @@ iframe, .post-map img {border:1px solid #ededed;border-radius:3px;}
 .post .post-heading .meta .title a:hover{text-decoration:underline!important}
 .post .post-heading .meta .time{margin-top:8px;color:#999}
 .post .post-description{padding:15px 15px 8px}
-.post .post-description p{font-size:18px;color:#555; text-align:center; overflow:hidden;word-wrap:break-word}
+.post .post-description p{font-size:18px;color:#555;text-align:center;overflow:hidden;word-wrap:break-word}
 .post .post-description .stats .stat-item{display:inline-block;padding:3px 7px;font-size:12px;border:0;color:#555}
 .post .post-description .stats .stat-item .icon{margin-right:8px}
 .post .post-file{max-height:400px;background:#f9f9f9;width:100%}
@@ -3052,7 +3052,7 @@ to{opacity:1;margin-top:0}
 .navbar-nav>li>a{line-height:0;line-height:24px!important}
 #local-media video:nth-child(2){width:100px;height:150px}
 #remote-media video:nth-child(2){width:95px}
-.center-container *{font-size:18px;max-width:100%}
+.center-container *:not(i) {font-size:18px;max-width:100%; min-width: 80%}
 .dropdown-menu>li{display:block}
 .wowonder-well .profile-style{width:100%}
 .admin-panel-well .admin-static{width:100%!important}
