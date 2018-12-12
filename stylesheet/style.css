@@ -3161,7 +3161,6 @@ to{opacity:1;margin-top:0}
 .header-brand{display:none}
 #wo_nw_msg_page .messages-container .message-media img {max-height: 110px;}
 #head_menu_rght {float: none !important;justify-content: space-around;margin: 0 -18px;}
-.reactions-box {width: 148px;top: -100px;}
 .post .post-footer .comments-list .comment .comment-body .reactions-box {top: -100px;}
 .post .post-footer .comments-list .reply .comment-body .reactions-box {left: -30px;}
 }
@@ -3171,6 +3170,7 @@ to{opacity:1;margin-top:0}
 .publisher-box #publisher-button{font-size:15px}
 .publisher-box .publisher-hidden-option select{font-size:11px;height:30px;margin-right:0;padding:0 2px}
 .dropdown{padding-left:10px}
+.reactions-box {width: 148px;top: -100px;}
 .navbar-nav>li>a{line-height:24px!important;padding:10px 5px}
 .wo_loading_post_child{transform:scale(.5);margin:-75px -130px}
 .wo_send_gift .gift-data, .user_media_list_section .photo-data, .user_media_list_section .video-data {flex: 0 0 100%;width: 100%;}
